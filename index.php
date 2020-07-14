@@ -215,7 +215,7 @@
 		// };
 
 		if (defined('SURNAME')) {
-			echo "<p><strong>21)</strong> Меня зовут $surname $name[0]. $patronymic[0].<br /> Мне $age года. </p>";
+			echo "<p><strong>21)</strong> Меня зовут " . $surname . " " . $name[0] . ". " . $patronymic[0] . "." . "<br /> Мне " . $age . " года. </p>";
 		} else {
 			echo "<p><strong>21)</strong> Константа не существут </p>";
 		};

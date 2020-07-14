@@ -188,12 +188,12 @@
 		//20
 
 		$var = 1;
-		$var = --$var + 12;
-		$var = ++$var - 14;
-		$var /= $var * 5;
-		$var *= $var / 7;
-		$var += ++$var + 1;
-		$var -= ++$var - 1;
+		$var += 12;
+		$var -= 14;
+		$var *= 5;
+		$var /= 7;
+		++$var;
+		--$var;
 
 		echo "<p><strong>20)</strong> $var </p>";
 
@@ -222,19 +222,19 @@
 
 		//22
 
-		$text = 'Я';
-		$text = $text.' хочу ';
-		$text .= $text.'знать ';
-		$text .= $text.'PHP!';
+		$text = 'Я ';
+		$text .= ' хочу';
+		$text .= ' знать';
+		$text .= ' PHP!';
 
 		echo "<p><strong>22)</strong> $text </p>";
 
 		//23
 
 		$var = 10;
-		$var = --$var + 1;
-		$var = --$var + 1;
-		$var = ++$var - 1;
+		++$var ;
+		++$var;
+		--$var;
 
 		echo "<p><strong>23)</strong> $var </p>";
 

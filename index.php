@@ -10,8 +10,6 @@
 
 	<?php 
 
-		//echo '<p>. ' .  . '</p>';
-
 		date_default_timezone_set('Europe/Moscow');
 
 		//1
@@ -142,11 +140,12 @@
 		//15
 
 		$text = 'abcde';
-		$search = 'a';
-		$replace = '!';
-		$a = str_replace($search, $replace, $text);
+		$text{0} = '!';
+		// $search = 'a';
+		// $replace = '!';
+		// $a = str_replace($search, $replace, $text);
 
-		echo "<p><strong>15)</strong> $a </p>";
+		echo "<p><strong>15)</strong> $text </p>";
 
 		//16
 
@@ -177,7 +176,7 @@
 		$minuts = date("i");
 		$seconds = date("s");
 
-		echo "<p><strong>18)</strong> {$hour} : {$minuts} : {$seconds} </p>";
+		echo "<p><strong>18)</strong> {$hour}:{$minuts}:{$seconds} </p>";
 
 		//19
 
@@ -205,7 +204,15 @@
 		$patronymic = 'Игоревич';
 		$age = 24;
 		$surname = SURNAME;
-		// $text = 'Меня зовут' SURNAME $name[0] $patronymic[0];
+
+		// $arr1 = str_split($name);
+		// $arr2 = str_split($patronymic);
+
+		// if (defined('SURNAME')) {
+		// 	echo "<p><strong>21)</strong> Меня зовут $surname $arr1[0]. $arr2[0].<br /> Мне $age года. </p>";
+		// } else {
+		// 	echo "<p><strong>21)</strong> Константа не существут </p>";
+		// };
 
 		if (defined('SURNAME')) {
 			echo "<p><strong>21)</strong> Меня зовут $surname $name[0]. $patronymic[0].<br /> Мне $age года. </p>";
@@ -216,9 +223,9 @@
 		//22
 
 		$text = 'Я';
-		$text != $text.' хочу';
-		$text != $text.' знать';
-		$text = $text.' PHP!';
+		$text = $text.' хочу ';
+		$text .= $text.'знать ';
+		$text .= $text.'PHP!';
 
 		echo "<p><strong>22)</strong> $text </p>";
 

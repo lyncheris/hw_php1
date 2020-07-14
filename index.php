@@ -6,7 +6,11 @@
 	<title>Document</title>
 </head>
 <body>
+
+
 	<?php 
+
+		//echo '<p>. ' .  . '</p>';
 
 		date_default_timezone_set('Europe/Moscow');
 
@@ -200,10 +204,11 @@
 		$name = 'Антон';
 		$patronymic = 'Игоревич';
 		$age = 24;
+		$surname = SURNAME;
 		// $text = 'Меня зовут' SURNAME $name[0] $patronymic[0];
 
 		if (defined('SURNAME')) {
-			echo "<p><strong>21)</strong> Меня зовут Алексеенко $name[0]. $patronymic[0].<br /> Мне $age года. </p>";
+			echo "<p><strong>21)</strong> Меня зовут $surname $name[0]. $patronymic[0].<br /> Мне $age года. </p>";
 		} else {
 			echo "<p><strong>21)</strong> Константа не существут </p>";
 		};
